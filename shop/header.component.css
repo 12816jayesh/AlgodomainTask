@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    width: auto;
+    height: 70px;
+    background-color: rgb(14, 88, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.head>div>button{
+    border: none;
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.outerdiv{
+    width: auto;
+    height: 450px;
+}
+.productcard
+{
+ width: 70%;
+ background-color: white;
+ height: 450px;
+ margin: 10px auto;
+
+}
+.productcard >table >tbody>tr>td> span > .btn-plus
+{
+    background-color: green;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-align: center;
+}
+.productcard table >tbody>tr>td> span > .btn-minus
+{
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-align: center;
+}
+/* payment component */
+.payment-div{
+    width: auto;
+    margin-top: 10px;
+    height: 150px;
+    background-color: rgb(226, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment-div > .payment-option{
+ width: 300px;
+ height: 100px;
+ 
+}

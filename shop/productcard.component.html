@@ -1,0 +1,44 @@
+<div class="productcard">
+    <!-- no image description quntity costprice totalprice -->
+    <table class="table">
+        <thead>
+            <tr>
+         <th>PId</th>
+        <th>Image</th>
+        <th>Desc</th>
+        <th>Qty</th>
+        <th>MRP</th>
+        <th>Total</th>
+            </tr>
+        </thead>
+      <tbody>
+       <tr *ngFor="let id of item" >
+        <td>
+            <span >{{id.id}}</span>
+        </td>
+        <td>
+            <img class="images" [src]="id.img" width="80px" height="80px" alt="" srcset="">
+        </td>
+        <td>
+            <span>{{id.description}}</span>
+        </td>
+        <td>
+            <span>{{id.quantityCount}}Pc<button class="btn-plus" (click)="getIncQuantity(id.id)" (click)="getTotalInc(id.id)">
+                 +</button>
+                <button class="btn-minus" (click)="getDecQuantity(id.id)" (click)="getTotalInc(id.id)">
+                    -</button></span>
+        </td>
+        <td>
+            <span>{{id.price}}</span>
+        </td>
+        <td>
+            <span>{{id.totalCount}}</span>
+        </td>
+       </tr>
+       <tr>
+        <td colspan="6" style="text-align:right;">Grand Total:{{grandT}}</td>
+       </tr>
+      </tbody>
+    </table>
+
+</div>
